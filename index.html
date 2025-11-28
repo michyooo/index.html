@@ -760,8 +760,8 @@
 </div>
 <script>
     // --- GANTI NILAI INI ---
-    const apiKey = 'MASUKKAN_API_KEY_KAMU'; // << HARUS DIGANTI!
-    const city = 'Bandung'; // << GANTI NAMA KOTA ANDA
+    const apiKey = 'ca7b940f500a86fc570f60d1673ae624'; // << HARUS DIGANTI!
+    const city = 'Bogor'; // << GANTI NAMA KOTA ANDA
     // Konstruksi URL yang BENAR menggunakan Template Literal (backtick: `)
     const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
     fetch(apiUrl)
@@ -779,7 +779,7 @@
             const namaKota = data.name;
             // Update elemen HTML menggunakan Template Literal yang BENAR
             document.getElementById("cuaca").innerText =
-                `Lokasi: ${bogor} | Suhu: ${31.09}°C | Kelembapan: ${75%}%`;
+                `Lokasi: ${namaKota} | Suhu: ${suhu}°C | Kelembapan: ${kelembapan}%`;
         })
         .catch(error => {
             // Tampilkan pesan kesalahan jika fetch gagal
